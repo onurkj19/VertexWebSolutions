@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
 </head>
 <body>
 
@@ -31,11 +37,15 @@
         </div>
     </header>
 
-    <section id="hero" class="fade-in">
-        <h1>Welcome to Vertex Web Solutions</h1>
+<section id="hero">
+    <div class="overlay">
+        <h1>Welcome to</h1> 
+            <img src="./assets/vertex_web_solutions-removebg-preview.png" alt="Vertex Web Solutions Logo" class="inline-logo">
         <p>Your partner for web design, digital marketing, logo design, and social media management.</p>
         <a href="#contact" class="cta-btn">Get in Touch</a>
-    </section>
+    </div>
+</section>
+
 
     <section id="services" class="fade-in">
         <h2>Our Services</h2>
@@ -61,10 +71,41 @@
         </div>
     </section>
 
-    <section id="portfolio" class="fade-in">
-        <h2>Portfolio</h2>
-        <p>Examples of our recent work will be showcased here.</p>
-    </section>
+<section id="portfolio" class="fade-in">
+    <h2>Portfolio</h2>
+    <p>Examples of our recent work will be showcased here.</p>
+
+    <div class="gallery">
+        <a href="./assets/pexels-magnus-mueller-1398178-2818118.jpg" data-lightbox="portfolio" data-title="Project 1" class="gallery-item">
+            <img src="./assets/pexels-magnus-mueller-1398178-2818118.jpg" alt="Project 1">
+        </a>
+        <a href="./assets/pexels-pixabay-258174.jpg" data-lightbox="portfolio" data-title="Project 2" class="gallery-item">
+            <img src="./assets/pexels-pixabay-258174.jpg" alt="Project 2">
+        </a>
+        <a href="./assets/pexels-scottwebb-430205.jpg" data-lightbox="portfolio" data-title="Project 3" class="gallery-item">
+            <img src="./assets/pexels-scottwebb-430205.jpg" alt="Project 3">
+        </a>
+        <a href="./assets/Screenshot 2025-06-09 201640.png" data-lightbox="portfolio" data-title="Project 4" class="gallery-item">
+            <img src="./assets/Screenshot 2025-06-09 201640.png" alt="Project 4">
+        </a>
+        <a href="./assets/Screenshot 2025-06-09 201710.png" data-lightbox="portfolio" data-title="Project 5" class="gallery-item">
+            <img src="./assets/Screenshot 2025-06-09 201710.png" alt="Project 5">
+        </a>
+        <a href="./assets/Screenshot 2025-06-09 201719.png" data-lightbox="portfolio" data-title="Project 6" class="gallery-item">
+            <img src="./assets/Screenshot 2025-06-09 201719.png" alt="Project 6">
+        </a>
+        <a href="./assets/Screenshot 2025-06-09 201748.png" data-lightbox="portfolio" data-title="Project 7" class="gallery-item">
+            <img src="./assets/Screenshot 2025-06-09 201748.png" alt="Project 7">
+        </a>
+        <a href="./assets/Screenshot 2025-06-09 201757.png" data-lightbox="portfolio" data-title="Project 8" class="gallery-item">
+            <img src="./assets/Screenshot 2025-06-09 201757.png" alt="Project 8">
+        </a>
+        <a href="./assets/vertex_web_solutions-removebg-preview.png" data-lightbox="portfolio" data-title="Project 9" class="gallery-item">
+            <img src="./assets/vertex_web_solutions-removebg-preview.png" alt="Project 9">
+        </a>
+    </div>
+</section>
+
 
     <section id="about" class="fade-in">
         <h2>About Us</h2>
