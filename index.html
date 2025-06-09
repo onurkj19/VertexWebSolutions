@@ -4,123 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertex Web Solutions</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dark-mode-toggle">
-        <label class="switch">
-            <input type="checkbox" id="darkModeSwitch">
-            <span class="slider"></span>
-        </label>
-        <span>Dark Mode</span>
-    </div>
 
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Vertex Web Solutions</h1>
-            <p>Innovative Web Design and Development Services</p>
-            <a href="#services" class="btn btn-primary">Discover Our Solutions</a>
+    <header>
+        <div class="logo">
+            <img src="./assets/vertex_web_solutions-removebg-preview.png" alt="Vertex Web Solutions Logo">
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </header>
 
-    <section id="services" class="services-section">
+    <section id="hero" class="fade-in">
+        <h1>Welcome to Vertex Web Solutions</h1>
+        <p>Your partner for web design, digital marketing, logo design, and social media management.</p>
+        <a href="#contact" class="cta-btn">Get in Touch</a>
+    </section>
+
+    <section id="services" class="fade-in">
         <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="icon">
-                    <img src="https://via.placeholder.com/100" alt="Web Design Icon">
-                </div>
-                <h3>Web Design</h3>
-                <p>Crafting visually stunning and user-friendly web interfaces tailored to your needs.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <img src="https://via.placeholder.com/100" alt="Web Development Icon">
-                </div>
-                <h3>Web Development</h3>
-                <p>Building responsive, high-performance websites with the latest technologies.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <img src="https://via.placeholder.com/100" alt="SEO Icon">
-                </div>
-                <h3>SEO Optimization</h3>
-                <p>Enhancing your online presence with effective SEO strategies to reach your audience.</p>
-            </div>
+        <div class="service-card">
+            <i class="fas fa-laptop-code service-icon"></i>
+            <h3>Web Design</h3>
+            <p>Modern and responsive websites that reflect your brand.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-bullhorn service-icon"></i>
+            <h3>Digital Marketing</h3>
+            <p>Targeted campaigns to grow your audience and sales.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-pen-nib service-icon"></i>
+            <h3>Logo Design</h3>
+            <p>Creative and unique logos to make your brand stand out.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-share-alt service-icon"></i>
+            <h3>Social Media Management</h3>
+            <p>Effective strategies for social media engagement and growth.</p>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="about-image">
-            <img src=".//assets/Black and Orange Neon Futuristic Simple Technology Logo.png" alt="About Us">
-        </div>
-        <div class="about-content">
-            <h2>About Vertex Web Solutions</h2>
-            <p>At Vertex Web Solutions, we are passionate about creating exceptional digital experiences. Our team of experts specializes in web design, development, and SEO optimization, ensuring your online presence is both impactful and effective.</p>
-            <a href="#contact" class="btn btn-secondary">Contact Us</a>
-        </div>
+    <section id="portfolio" class="fade-in">
+        <h2>Portfolio</h2>
+        <p>Examples of our recent work will be showcased here.</p>
     </section>
 
-    <section id="portfolio" class="portfolio-section">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400" alt="Project 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of this project showcasing our design and development capabilities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400" alt="Project 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of this project showcasing our design and development capabilities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400" alt="Project 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h3>Project Title 3</h3>
-                        <p>A brief description of this project showcasing our design and development capabilities.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>Vertex Web Solutions is committed to helping businesses grow through innovative digital strategies and creative design.</p>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="fade-in">
         <h2>Contact Us</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Vertex Web Solutions. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/onurkj_/"><img src="./assets/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
-        </div>
+        &copy; 2025 Vertex Web Solutions. All rights reserved.
     </footer>
 
     <script src="script.js"></script>
