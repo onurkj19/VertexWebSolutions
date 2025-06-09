@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Lightbox2 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
-
-<!-- Lightbox2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
-
 </head>
 <body>
 
@@ -71,41 +65,69 @@
         </div>
     </section>
 
-<section id="portfolio" class="fade-in">
-    <h2>Portfolio</h2>
-    <p>Examples of our recent work will be showcased here.</p>
+    <section id="portfolio" class="fade-in">
+        <h2>Portfolio</h2>
+        <p>Examples of our recent work will be showcased here.</p>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <div class="gallery">
-        <a href="./assets/pexels-magnus-mueller-1398178-2818118.jpg" data-lightbox="portfolio" data-title="Project 1" class="gallery-item">
-            <img src="./assets/pexels-magnus-mueller-1398178-2818118.jpg" alt="Project 1">
-        </a>
-        <a href="./assets/pexels-pixabay-258174.jpg" data-lightbox="portfolio" data-title="Project 2" class="gallery-item">
-            <img src="./assets/pexels-pixabay-258174.jpg" alt="Project 2">
-        </a>
-        <a href="./assets/pexels-scottwebb-430205.jpg" data-lightbox="portfolio" data-title="Project 3" class="gallery-item">
-            <img src="./assets/pexels-scottwebb-430205.jpg" alt="Project 3">
-        </a>
-        <a href="./assets/Screenshot 2025-06-09 201640.png" data-lightbox="portfolio" data-title="Project 4" class="gallery-item">
-            <img src="./assets/Screenshot 2025-06-09 201640.png" alt="Project 4">
-        </a>
-        <a href="./assets/Screenshot 2025-06-09 201710.png" data-lightbox="portfolio" data-title="Project 5" class="gallery-item">
-            <img src="./assets/Screenshot 2025-06-09 201710.png" alt="Project 5">
-        </a>
-        <a href="./assets/Screenshot 2025-06-09 201719.png" data-lightbox="portfolio" data-title="Project 6" class="gallery-item">
-            <img src="./assets/Screenshot 2025-06-09 201719.png" alt="Project 6">
-        </a>
-        <a href="./assets/Screenshot 2025-06-09 201748.png" data-lightbox="portfolio" data-title="Project 7" class="gallery-item">
-            <img src="./assets/Screenshot 2025-06-09 201748.png" alt="Project 7">
-        </a>
-        <a href="./assets/Screenshot 2025-06-09 201757.png" data-lightbox="portfolio" data-title="Project 8" class="gallery-item">
-            <img src="./assets/Screenshot 2025-06-09 201757.png" alt="Project 8">
-        </a>
-        <a href="./assets/vertex_web_solutions-removebg-preview.png" data-lightbox="portfolio" data-title="Project 9" class="gallery-item">
-            <img src="./assets/vertex_web_solutions-removebg-preview.png" alt="Project 9">
-        </a>
-    </div>
-</section>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="./assets/pexels-magnus-mueller-1398178-2818118.jpg" style="width:100%">
+    <div class="text">Social media management</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="./assets/pexels-pixabay-258174.jpg" style="width:100%">
+    <div class="text">Logo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="./assets/pexels-scottwebb-430205.jpg" style="width:100%" >
+    <div class="text">Logo</div> 
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="./assets/Screenshot 2025-06-09 201640.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="./assets/Screenshot 2025-06-09 201710.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="./assets/Screenshot 2025-06-09 201719.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="./assets/Screenshot 2025-06-09 201748.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="./assets/Screenshot 2025-06-09 201757.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>    
+    </section>
 
     <section id="about" class="fade-in">
         <h2>About Us</h2>
