@@ -405,3 +405,129 @@ footer {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #FFFFFF;
+    width: 100px;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease;
+}
+
+.tech-item:hover {
+    box-shadow: 0 0 15px 5px #0ff;
+}
+
+.tech-item i,
+.tech-item img {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    animation: floatIcon 4s ease-in-out infinite;
+    transition: animation-duration 0.3s ease;
+}
+
+.tech-item:hover i,
+.tech-item:hover img {
+    animation-duration: 1.5s;
+    animation-name: floatIconHover;
+}
+
+/* Shto animacione specifike per Node.js dhe React */
+.technologies > .tech-item:nth-child(5) i {
+    animation-delay: 0.5s;
+    animation-name: floatIconNodeReact;
+}
+
+.technologies > .tech-item:nth-child(5):hover i {
+    animation-name: floatIconHoverNodeReact;
+    animation-duration: 1.2s;
+}
+
+.technologies > .tech-item:nth-child(6) i {
+    animation-delay: 1s;
+    animation-name: floatIconNodeReact;
+}
+
+.technologies > .tech-item:nth-child(6):hover i {
+    animation-name: floatIconHoverNodeReact;
+    animation-duration: 1.2s;
+}
+
+/* Animacion i levizjes vertikale */
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Animacion hover me levizje dhe rrotullim */
+@keyframes floatIconHover {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    75% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+/* Animacion për Node.js dhe React - levizje horizontale dhe vertikale */
+@keyframes floatIconNodeReact {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -15px);
+    }
+    50% {
+        transform: translate(-10px, -5px);
+    }
+    75% {
+        transform: translate(10px, -15px);
+    }
+}
+
+@keyframes floatIconHoverNodeReact {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(15px, -20px) rotate(15deg);
+    }
+    50% {
+        transform: translate(-15px, -10px) rotate(-15deg);
+    }
+    75% {
+        transform: translate(15px, -20px) rotate(15deg);
+    }
+}
+
+/* Për imazhet e design dhe marketing */
+.design-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
